@@ -4,13 +4,22 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { FormsModule } from '@angular/forms';
+import { BioComponent } from './bio/bio.component';
+import { HomeComponent } from './home/home.component';
+import { BioDetailsComponent } from './bio-details/bio-details.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BioComponent,
+    HomeComponent,
+    BioDetailsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
